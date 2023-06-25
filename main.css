@@ -1,0 +1,218 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 4rem;
+}
+.nav_heading {
+  font-size: 2rem;
+  color: brown;
+}
+.nav_logo {
+  height: 5rem;
+  fill: brown;
+}
+.nav_right input {
+  height: 2.5rem;
+  width: 7rem;
+  border-radius: 1rem;
+  border: none;
+  margin-right: 1rem;
+  text-align: center;
+}
+.nav_arrow {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 1s;
+  border: none;
+  background-color: transparent;
+}
+.nav_arrow:hover {
+  transform: rotate(360deg);
+}
+
+.main {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.transaction_section {
+  margin: 2.5rem 20rem;
+}
+.transaction_section_upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+.transaction_section_upper_Ca {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+.transaction_section_lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+}
+.transaction_section_lower_span {
+  display: flex;
+  align-items: center;
+}
+.transaction_section_lower_in, .transaction_section_lower_out, .transaction_section_lower_interest {
+  padding: 0 1rem;
+  font-size: 2.2rem;
+}
+.transaction_section_lower_p, .transaction_section_lower_btn {
+  padding-right: 2rem;
+}
+.transaction_section_lower_sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transaction_section_lower_btn {
+  border: none;
+  background-color: transparent;
+  padding-right: 0rem;
+  font-size: 2rem;
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: 1s;
+  color: blue;
+}
+.transaction_section_lower_btn:hover {
+  transform: rotate(450deg);
+}
+
+.grid-container {
+  height: 45rem;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(3, 3fr);
+  gap: 2rem;
+}
+
+.grid-container > div {
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+
+.item1 {
+  grid-row: 1/-1;
+  grid-column: 1/3;
+  background-color: white;
+  overflow-y: scroll;
+}
+.item1_records {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: rgba(243, 243, 243, 0.3019607843);
+  color: inherit;
+  height: 5rem;
+  border-bottom: solid 0.1rem #444;
+  padding: 0 5rem;
+  font-size: 1.2rem;
+}
+.item1_records_deposit, .item1_records_withdrawal {
+  background-image: linear-gradient(to bottom, rgb(58, 227, 58), green);
+  color: white;
+  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+  margin-right: 2rem;
+}
+.item1_records_withdrawal {
+  background-image: linear-gradient(to top, rgb(239, 89, 89), rgb(255, 0, 0));
+}
+.item1_records_time {
+  margin-right: auto;
+  font-size: inherit;
+}
+.item1_records_amount {
+  font-size: 2.5rem;
+}
+
+.item2_records,
+.item3_records,
+.item4_records {
+  padding: 3rem;
+}
+.item2_records_heading,
+.item3_records_heading,
+.item4_records_heading {
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+.item2_records_input,
+.item3_records_input,
+.item4_records_input {
+  display: flex;
+  gap: 1rem;
+}
+.item2_records_input_transferTo, .item2_records_input_amount, .item2_records_input_username, .item2_records_input_pin,
+.item3_records_input_transferTo,
+.item3_records_input_amount,
+.item3_records_input_username,
+.item3_records_input_pin,
+.item4_records_input_transferTo,
+.item4_records_input_amount,
+.item4_records_input_username,
+.item4_records_input_pin {
+  width: 12rem;
+  background-color: rgba(255, 255, 255, 0.816);
+  border: none;
+  border-radius: 0.5rem;
+}
+.item2_records_btn,
+.item3_records_btn,
+.item4_records_btn {
+  border-radius: 0.5rem;
+  border: none;
+  background-color: white;
+  width: 4rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+.item2_records_lh,
+.item3_records_lh,
+.item4_records_lh {
+  font-size: 1.5rem;
+  margin: 0 3rem;
+}
+
+.item4_records_lh {
+  margin: 0 2rem;
+}
+
+.item2 {
+  background-image: linear-gradient(to right, orange, rgb(210, 137, 3));
+}
+
+.item3 {
+  background-image: linear-gradient(to right, rgb(58, 227, 58), green);
+}
+
+.item4 {
+  background-image: linear-gradient(to right, rgb(243, 64, 64), red);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  background-color: #f3f3f3;
+}/*# sourceMappingURL=main.css.map */
