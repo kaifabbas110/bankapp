@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Banskist App</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <h1 class="nav_heading">Log in to get started</h1>
+        <span>
+          <svg class="nav_logo" viewBox="0 0 20 20">
+            <path
+              d="M11.709,7.438H8.292c-0.234,0-0.427,0.192-0.427,0.427v8.542c0,0.234,0.192,0.427,0.427,0.427h3.417c0.233,0,0.426-0.192,0.426-0.427V7.865C12.135,7.63,11.942,7.438,11.709,7.438 M11.282,15.979H8.719V8.292h2.563V15.979zM6.156,11.709H2.74c-0.235,0-0.427,0.191-0.427,0.426v4.271c0,0.234,0.192,0.427,0.427,0.427h3.417c0.235,0,0.427-0.192,0.427-0.427v-4.271C6.583,11.9,6.391,11.709,6.156,11.709 M5.729,15.979H3.167v-3.416h2.562V15.979zM17.261,3.167h-3.417c-0.235,0-0.427,0.192-0.427,0.427v12.812c0,0.234,0.191,0.427,0.427,0.427h3.417c0.234,0,0.427-0.192,0.427-0.427V3.594C17.688,3.359,17.495,3.167,17.261,3.167 M16.833,15.979h-2.562V4.021h2.562V15.979z"
+            ></path>
+          </svg>
+        </span>
+        <div class="nav_right">
+          <input type="text" placeholder="user" class="nav_user" />
+          <input
+            type="text"
+            placeholder="pin"
+            class="nav_pin"
+            maxlength="4"
+          />
+          <!-- <a href="#" class="nav_arrow">&rarr;</a> -->
+          <button class="nav_arrow">&rarr;</button>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="transaction_section">
+        <div class="transaction_section_upper">
+          <span>
+            <h2 class="transaction_section_upper_Cb">Current balance</h2>
+            <p class="transaction_section_upper_Cd"></p>
+          </span>
+          <h1 class="transaction_section_upper_Ca"></h1>
+        </div>
+        <div class="grid-container">
+          <div class="item1">
+          </div>
+          <div class="item2">
+            <div class="item2_records">
+              <span class="item2_records_heading">Transfer money</span>
+              <div class="item2_records_input">
+                <input type="text" class="item2_records_input_transferTo" />
+                <input type="text" class="item2_records_input_amount" maxlength="4" />
+                <button class="item2_records_btn">&rarr;</button>
+              </div>
+              <span class="item2_records_lh">Transfer to</span>
+              <span class="item2_records_lh">Amount</span>
+            </div>
+          </div>
+          <div class="item3">
+            <div class="item3_records">
+              <span class="item3_records_heading">Request loan</span>
+              <div class="item3_records_input">
+                <input type="text" class="item3_records_input_amount" maxlength="10" />
+                <button class="item3_records_btn">&rarr;</button>
+              </div>
+              <span class="item3_records_lh">Amount</span>
+            </div>
+          </div>
+          <div class="item4">
+            <div class="item4_records">
+              <span class="item4_records_heading">Close account</span>
+              <div class="item4_records_input">
+                <input type="text" class="item4_records_input_username" />
+                <input type="text" class="item4_records_input_pin" maxlength="4" />
+                <button class="item4_records_btn">&rarr;</button>
+              </div>
+              <span class="item4_records_lh">Confirm user</span>
+              <span class="item4_records_lh">Confirm PIN</span>
+            </div>
+          </div>
+        </div>
+        <div class="transaction_section_lower">
+          <div class="transaction_section_lower_span">
+            <p class="transaction_section_lower_p">in<span class="transaction_section_lower_in"></span></p>
+            <p class="transaction_section_lower_p">
+              out<span class="transaction_section_lower_out"></span>
+            </p>
+            <p class="transaction_section_lower_p">
+              interest<span class="transaction_section_lower_interest"
+                ></span
+              >
+            </p>
+            <span class="transaction_section_lower_sort"
+              ><button class="transaction_section_lower_btn">&rarr;</button>sort</span
+            >
+          </div>
+            <p class="transaction_section_lower_logTime">
+            </p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
